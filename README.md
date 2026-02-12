@@ -1,29 +1,56 @@
-# Kurdistan
 # 🟢 KURDISTAN PRO
 
 Multi Profile Linux Service Manager  
-With Monitoring • Telegram Alerts • Backup • Auto Restart
+Monitoring • Telegram Alerts • Backup • Auto Restart
 
 ---
 
-## ✨ Features
-
-- ✅ Multi Profile Support
-- ✅ systemd Integration
-- ✅ Auto Restart
-- ✅ CPU/RAM Monitoring
-- ✅ Uptime Tracking
-- ✅ Telegram Alerts (Only Once Per Incident)
-- ✅ Error Log Forwarding
-- ✅ Daily Health Report
-- ✅ Backup & Restore
-- ✅ Whiptail UI
+## 🌍 Language / زبان / زمان
+- 🇮🇷 [فارسی](#-فارسی)
+- 🇬🇧 [English](#-english)
+- 🟡 [Kurdî](#-kurdî)
 
 ---
 
-## 🚀 Installation
+---
+
+# 🇮🇷 فارسی
+
+## 📌 معرفی
+
+Kurdistan PRO یک اسکریپت حرفه‌ای مدیریت سرویس در لینوکس است که امکان ساخت چند پروفایل همزمان، مانیتورینگ خودکار، ریستارت هوشمند، نوتیفیکیشن تلگرام و گزارش روزانه سلامت سرویس‌ها را فراهم می‌کند.
+
+مناسب برای:
+- مدیریت سرویس‌های سفارشی
+- اجرای چند سرویس همزمان
+- مانیتورینگ اتوماتیک
+- دریافت هشدار در تلگرام
+
+---
+
+## ✨ امکانات
+
+- ✅ ساخت چند پروفایل همزمان  
+- ✅ ساخت سرویس systemd جداگانه برای هر پروفایل  
+- ✅ ریستارت خودکار هنگام Down  
+- ✅ ارسال نوتیفیکیشن تلگرام (فقط یکبار در هر خطا)  
+- ✅ ارسال 20 خط آخر لاگ هنگام خطا  
+- ✅ گزارش روزانه سلامت همه سرویس‌ها (ساعت 9 صبح)  
+- ✅ نمایش Uptime هر سرویس  
+- ✅ بکاپ و ریستور پروفایل‌ها  
+- ✅ پنل گرافیکی با whiptail  
+- ✅ مانیتورینگ خودکار با cron  
+
+---
+
+## 🚀 نصب
+
+### پیش‌نیاز:
 
 ```bash
+sudo apt update
+sudo apt install curl whiptail -y
+
 curl -fsSL https://raw.githubusercontent.com/Zuvpn/kurdistan/main/kurdistan.sh -o /usr/local/bin/kurdistan
 chmod +x /usr/local/bin/kurdistan
 sudo kurdistan
